@@ -1,0 +1,129 @@
+ls
+ls -la
+cat .bashrc
+.bashrc
+cd dots
+ls
+mkdir alacritty
+cd alacritty/
+hx alacritty.toml
+alacritty --version
+font-conf
+exit
+ls
+exit
+ls
+cd .config/
+ls
+rm -rf nushell/; ~/dots/config_move.sh
+ranger
+cd 
+cd dots
+ls
+hx nushell/config.nu
+env
+vim nushell/config.nu
+hx
+hx nushell/config.nu
+cd dots
+hx
+ls
+sl
+ls
+neofetch
+hx nushell/config.nu
+open config_move.sh
+cd rust
+l;s
+ls
+cd paru/
+ls
+cd src/
+ls
+cd paru-2.0.3/
+ls
+cd src/
+ls
+open main.rs
+cargo install nu_plugin_highlight
+ls
+which nu_plugin_highlight
+register nu_plugin_highlight
+cd ~
+ls
+cd dots
+ls
+cd nushell/
+ls
+mkdir init.nu
+rm -r init.nu/
+hx init.nu
+nu init.nu
+ls
+cd nushell/
+ls
+nu init.nu
+which nu_plugin_highlight
+(which nu_plugin_highlight)
+(which nu_plugin_highlight).path
+nu init.nu
+cargo install --help
+ls
+nu init.nu
+ls
+ranger
+which nu_plugin_highlight
+nu init.nu
+ranger
+which nu_plugin_highlight 
+ranger
+ls
+nu init.nu
+ls
+ranger
+open init.nu | highlight
+open init.nu | nu-highlight
+open init.nu | highlight nu
+open init.nu | nu-highlight nu
+highlight --list-themes
+nu-highlight --list-themes
+highlight --list-themes
+hx init.nu
+ls
+hx plugin.nu
+ls
+ks 0ka
+ls -la
+open .bashrc | highlight
+open .bashrc | highlight sh
+cd dots
+ls
+cd nushell/
+ls
+open config.nu | highlight
+open config.nu | highlightnu
+open config.nu | highlight nu
+open config.nu | highlight nushell
+open config.nu | highlight
+open config.nu | head 10 |highlight
+open config.nu | first 10 |highlight
+open config.nu | lines | first 10 |highlight
+open config.nu | lines | first 10 | highlight
+open config.nu | lines | first 10 
+clear
+ls
+cd ..
+pacman -S fish
+sudo pacman -S fish
+hx kitty/kitty.conf
+hx env.nu
+cd ..
+ls
+exit
+ls
+hx config_move.sh
+./config_move.sh
+cd fish
+ls
+hx config.fish
+exit

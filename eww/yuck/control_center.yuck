@@ -1,0 +1,12 @@
+
+(defwidget control_center[]
+  (box :orientation "v"
+    (settings_toggler
+      :is_set {active_device}
+      :icon1 " "
+      :icon2 "󱀞 "
+      :command1 './scripts/sound.sh device --toggle'
+      :command2 './scripts/sound.sh device --toggle'
+    )
+  )
+)

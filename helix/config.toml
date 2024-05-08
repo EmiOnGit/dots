@@ -1,0 +1,40 @@
+theme        = "ayu_mirage_opacity"
+[editor]
+line-number  = "relative"
+mouse        = false
+scroll-lines = 5
+shell        = ["fish", "-c"]
+idle-timeout = 200
+bufferline   = "multiple"
+[editor.statusline]
+left         = ["mode", "file-name", "read-only-indicator", "file-modification-indicator"]
+center       = ["spinner", "diagnostics"]
+right        = ["version-control", "register", "position", "total-line-numbers", "file-encoding"]
+[editor.file-picker]
+max-depth    = 8 
+[editor.auto-pairs]
+'('          = ')'
+'{'          = '}'
+'['          = ']'
+[editor.whitespace.render]
+space        = "all"
+tab          = "all"
+[editor.whitespace.characters]
+tab          = "→"
+tabpad       = "-"
+space        = "."
+[editor.soft-wrap]
+enable       = true
+max-wrap     = 25
+
+[keys.normal]
+J            = ["select_line_below"]
+K            = ["select_line_above"]
+
+[keys.select]
+J            = ["select_line_below"]
+K            = ["select_line_above"]
+[keys.normal."+"]
+r            = ":run-shell-command cargo run"
+R            = ":run-shell-command cargo run --release"
+t            = ":run-shell-command cargo test"

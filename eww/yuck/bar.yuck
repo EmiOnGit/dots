@@ -1,0 +1,11 @@
+
+(defwidget bar []
+  (centerbox :orientation "h"
+    (box :halign "start"
+    (box time)
+    (workspaces)
+    )
+    (active_window)
+    (right)
+  )
+)

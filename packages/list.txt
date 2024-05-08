@@ -1,0 +1,15 @@
+ttf-fira-code
+otf-font-awesome # awesome font comes with some icons
+kitty            # terminal
+nemo             # file manager
+nemo-fileroller  # archive extension
+fish             # shell
+#### eww scripts
+awk
+socat
+jq
+libpulse
+#### lsp
+taplo            # ron files
+vscode-css-languageserver
+vscode-json-languageserver
