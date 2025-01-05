@@ -8,5 +8,9 @@
       :command1 './scripts/sound.sh device --toggle'
       :command2 './scripts/sound.sh device --toggle'
     )
+  (box :class "label" " ")
+  (box :class "label" " ")
+  (box :class "label" "⏼ ")
+  (box :class "label" " ")
   )
 )

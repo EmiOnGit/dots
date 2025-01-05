@@ -4,9 +4,10 @@
 
 //Global Styles
 .bar {
-  background-color: rgba(#3a3a3a, 0.0);
+  background-color: rgba(#3a3a3a, 0.4);
   color: #b0b4bc;
-  padding: 1px;
+  padding: 3px;
+  font-size: 16px;
 }
 
 
@@ -42,14 +43,40 @@
 .metric scale trough {
   all: unset;
   background-color: #4e4e4e;
-  border-radius: 0px;
-  min-height: 5px;
+  border-radius: 10px;
+  min-height: 8px;
   min-width: 70px;
   margin-left: 10px;
   margin-right: 20px;
 }
 
+.open_menu {
+  background-color: #8aaa81;
+  color: #333;
+  padding: 1px 1px 1px 4px;
+  border-radius: 3px;
+}
+
+.label {
+  background-color: #ef8f8f;
+  color: #333;
+  border-radius: 3px;
+}
+
+.volume-label {
+  padding: 1px 0px 1px 4px;
+}
+
+
+.active-program-label {
+  padding: 0px 8px 0px 8px;
+
+}
 
 .workspaces button:hover {
   color: #D35D6E;
+}
+
+.workspaces {
+  background-color: #222;
 }

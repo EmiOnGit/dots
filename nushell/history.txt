@@ -127,3 +127,156 @@ cd fish
 ls
 hx config.fish
 exit
+ls
+cat station_10427.csv
+csv
+cat station_10427.csv | to csv
+cat station_10427.csv | from csv
+cat station_10427.csv | from csv | head
+cat station_10427.csv | from csv | head 10
+cat station_10427.csv | from csv | head -10
+cat station_10427.csv | from csv | head -20
+cat station_10427.csv | from csv | head -202
+cat station_10427.csv | from csv | head -20
+cat station_10427.csv | from csv | dfr first
+cat station_10427.csv | from csv | dfr first 1
+from csv station_10427.csv
+open station_10439.csv
+open station_10439.csv | select temp
+open station_10439.csv | first 5
+open station_10439.csv | first 5 | select rhum
+open station_10439.csv | first 5 | select rhum pres
+open station_10439.csv | first 5 | sort-by pres
+open station_10439.csv | sort-by pres | first 4
+open station_10439.csv | sort-by temp | first 4
+open station_10439.csv | sort-by temp | rev| first 4
+open station_10439.csv | sort-by temp | rev | first 4
+open station_10439.csv | sort-by temp | reverse | first 4
+open station_10439.csv | sort-by temp | first 4
+clear
+let a = open station_10427.csv
+let a = open station_10427.csv | sort-by temp
+a
+$a
+$a | first 5
+let b = open station_10528.csv | sort-by temp
+$a | merge $b | first 5
+$a | merge $b | first5
+$a | merge $b | first 5
+$b
+$b | first 5
+$a | first 5
+$a | merge $b | first 5
+$a | merge $b | first 10
+$a | first 10
+$b | first 10
+$b == $a
+$b | first 10 | == $a
+$c = $b | first 20
+c = $b | first 20
+let c = $b | first 20
+let d = $a | merge $b | first 20
+c == d
+$c == $d
+clear
+ls
+open station_10439.csv | sort-by temp | first 10 | table
+open station_10439.csv | sort-by temp | first 10 | grid
+open station_10439.csv | sort-by temp | first 10 | explore
+open station_10439.csv | sort-by temp | first 100 | explore
+clear
+ls
+exit
+ls
+open stations.csv
+open stations.csv | sort distance
+open stations.csv | sort "distance"
+open stations.csv | sort-by distance
+open stations.csv | sort-by distance | reverse
+clear
+ls
+open fetch_weather.ipynb
+open fetch_weather.ipynb --help
+from json -o
+from json fetch_weather.ipynb
+from json -o fetch_weather.ipynb
+from json -o "fetch_weather.ipynb"
+from json "fetch_weather.ipynb"
+open --help
+def "from ipynb" [] {from json -o};
+open fetch_weather.ipynb
+def "from ipynb" [] {from json -o}
+open fetch_weather.ipynb
+open --raw fetch_weather.ipynb
+open --raw fetch_weather.ipynb | json
+open --raw fetch_weather.ipynb | to json
+open --raw fetch_weather.ipynb | from json
+open --raw fetch_weather.ipynb | from json | select "cells"
+open --raw fetch_weather.ipynb | from json | select "cells" | get 0
+open --raw fetch_weather.ipynb | from json | select "cells" | row 0
+[open --raw fetch_weather.ipynb | from json].cells
+[open --raw fetch_weather.ipynb | from json].cell
+[open --raw fetch_weather.ipynb | from json].cells
+[open --raw fetch_weather.ipynb | from json]
+[open --raw fetch_weather.ipynb | from json] | get "cells"
+open --raw fetch_weather.ipynb | from json | select "cells" | row 0 | .cells
+open --raw fetch_weather.ipynb | from json | .cells
+{open --raw fetch_weather.ipynb | from json}.cells
+{open --raw fetch_weather.ipynb | from json }.cells
+{open --raw fetch_weather.ipynb | from json }
+{open --raw fetch_weather.ipynb | from json }()
+{open --raw fetch_weather.ipynb | from json } | <\n>sjpw
+{open --raw fetch_weather.ipynb | from json } | <\n>show
+{open --raw fetch_weather.ipynb | from json } | <\n>head
+{open --raw fetch_weather.ipynb | from json } | head
+git
+git status
+git status | null
+<\n><\n>it status 
+clear
+ls
+exit
+open stations.csv
+exit
+ls
+open stations_metadata.csv
+open stations_metadata.csv | where id == "10439"
+open stations_metadata.csv | where scale > 1
+open stations_metadata.csv | where scale < 1
+open stations_metadata.csv | where id = "D5524"
+open stations_metadata.csv | where id == "D5524"
+open stations_metadata.csv | where id == "10439"
+open stations_metadata.csv | where id == "10439 "
+open stations_metadata.csv | where id == " 10439"
+open stations_metadata.csv | where id =~ "10439"
+open stations_metadata.csv | where id = 10439
+open stations_metadata.csv | where id == 10439
+open stations_metadata.csv
+open stations_metadata.csv | where id == 10439
+open stations_metadata.csv | where id == "D3164"
+clear
+ls
+cd processed/
+ls
+open station_10427.parquet
+ls
+cd assets/weather/
+ls
+open stations_metadata.csv | where id == "D3164"
+open stations_metadata.csv | where id == 10534
+tutor
+tutor begin
+ls | select name
+tutor tables
+tutor cells
+tutor shorthands
+or
+true or true
+open stations_metadata.csv | where id == 10534 or id == "D3164"
+open stations_metadata.csv | where id == 10534 or id == "D3164" | select cut_end
+open stations_metadata.csv | where id == 10534 or id == "D3164" | select scale
+clear
+exit
+ls
+open MLTempDataset.csv
+open MLTempDataset1.csv

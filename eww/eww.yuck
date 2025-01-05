@@ -1,11 +1,10 @@
 (include "yuck/bar.yuck")
 (include "yuck/control_center.yuck")
 (include "windows.yuck")
+
 (defwidget active_window []
-  (box
-    (label :text "${window}")
-  )
-  )
+  (box :class "label active-program-label"
+     (label :text "${window}")))
 
 (defwidget workspaces []
   (box :class "workspaces"
@@ -25,10 +24,11 @@
 
 (defwidget right []
   (box :class "sidestuff" :orientation "h" :space-evenly false :halign "end"
-    (metric :label "󱄠"
+    (metric :label "󱄠 "
+            :class "symbols"
             :value {volume}
             :onchange "./scripts/sound.sh volume --set {}%")
-            (button  :onclick "eww open --toggle control_center" " ")
+    (button  :class "open_menu" :onclick "eww open --toggle control_center" "   ")
   )
 )
 
@@ -40,19 +40,23 @@
   (box :orientation "h"
        :class "metric"
        :space-evenly false
-    (box :class "label" label)
+    (box :class "label volume-label" label)
     (scale :min 0
            :max 101
            :active {onchange != ""}
            :value value
            :onchange onchange)))
 
+(defwidget time []
+  (box (box) (box :class "label" timevar) (box))
+)
+
 (deflisten window :initial "..." "./scripts/active_window_title.sh")
 
 (deflisten volume :initial "0"
   "./scripts/sound.sh volume --get")
 
-(defpoll time :interval "10s"
+(defpoll timevar :interval "10s"
   "date '+%H:%M'")
 
 (deflisten active_device :initial "false" "./scripts/sound.sh device --listen")

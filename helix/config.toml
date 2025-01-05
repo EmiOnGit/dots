@@ -12,6 +12,7 @@ center       = ["spinner", "diagnostics"]
 right        = ["version-control", "register", "position", "total-line-numbers", "file-encoding"]
 [editor.file-picker]
 max-depth    = 8 
+hidden = false
 [editor.auto-pairs]
 '('          = ')'
 '{'          = '}'
@@ -30,6 +31,7 @@ max-wrap     = 25
 [keys.normal]
 J            = ["select_line_below"]
 K            = ["select_line_above"]
+C-r = ":run-shell-command make > /dev/null"
 
 [keys.select]
 J            = ["select_line_below"]

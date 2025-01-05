@@ -1,6 +1,5 @@
 [[language]]
 name = "rust"
-
 [language.auto-pairs]
 '(' = ')'
 '{' = '}'
@@ -18,3 +17,4 @@ language-servers = [
 {name = "pyright", except-features = ["format"]} 
 ]
 auto-format = true
+
