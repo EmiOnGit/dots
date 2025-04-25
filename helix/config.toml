@@ -5,6 +5,7 @@ mouse        = false
 scroll-lines = 5
 shell        = ["fish", "-c"]
 idle-timeout = 200
+completion-timeout = 50
 bufferline   = "multiple"
 [editor.statusline]
 left         = ["mode", "file-name", "read-only-indicator", "file-modification-indicator"]
